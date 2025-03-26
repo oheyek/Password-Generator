@@ -129,6 +129,12 @@ input::-webkit-inner-spin-button {
     font-weight: 600;
 }
 
+.wrapper .submit-btn:hover {
+    background-color: #f75164;
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
 .wrapper .remember {
     display: flex;
     text-align: center;
@@ -218,4 +224,54 @@ input[type="range"]::-moz-range-thumb {
 
 .slider-container input {
     padding: 0px;
+}
+
+.password-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.password-result {
+    flex: 1;
+}
+
+.copy-btn {
+    flex-shrink: 0;
+}
+
+.copy-btn button {
+    display: flex;
+    padding: 10px;
+    background: #f75164;
+    color: #fff;
+    font-size: 19px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    height: 100%;
+}
+
+.copy-btn button:hover {
+    background-color: #fff;
+    color: #f75164;
+    transition: all 0.5s ease;
+}
+
+footer{
+    text-align: center;
+    margin-top: 10px;
+    color: #fff;
+    font-size: 12px;
+}
+
+a{
+    color: #fff;
+}
+
+a:hover{
+    color: #f75164;
+    transition: all 0.5s ease;
 }

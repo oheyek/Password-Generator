@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator | ohey</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 </head>
 
 <body>
@@ -13,8 +15,15 @@
         <form action="">
             <h1>Password Generator</h1>
             <div class="input-box">
-                <div class="password-result">
-                    <input type="text" id="generatedPassword" readonly placeholder="Your password will appear here">
+                <div class="password-container">
+                    <div class="password-result">
+                        <input type="text" id="generatedPassword" readonly placeholder="Generated Password">
+                    </div>
+                    <div class="copy-btn">
+                        <button>
+                            <i class="fa fa-copy"></i>
+                        </button>
+                    </div>
                 </div>
                 <div class="slider-container">
                     <div class="label-container">
@@ -63,6 +72,10 @@
                     <p>Remember to write down the password you will use.</p>
                 </div>
         </form>
+        <footer>
+            Made with ❤️ by <a href="https://buymeacoffee.com/ohey">ohey</a><br>
+            Project <a href="https://github.com/oheyek/Password-Generator">Github</a>
+        </footer>
     </div>
 </body>
 <script src="scripts/script.js"></script>
