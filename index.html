@@ -15,48 +15,53 @@
             <div class="input-box">
                 <div class="password-result">
                     <input type="text" id="generatedPassword" readonly placeholder="Your password will appear here">
-            <div class="slider">
-                <input type="range" min="4" max="32" value="10" id="passwordLength">
-            </div>
-                    <div class="switches-container">
-                        <div class="switches-column">
-                            <div class="switch">
-                                <div class="switch-body">
-                                    <div class="toggle"></div>
-                                </div>
-                                <label>Numbers</label>
-                                <input type="checkbox" name="numbers>">
+                </div>
+                <div class="slider-container">
+                    <div class="label-container">
+                        <label>Password Lenght</label>
+                        <span>10</span>
+                    </div>
+                    <input type="range" id="charLenght" min="1" max="30" value="10" class="slider-range" />
+                </div>
+                <div class="switches-container">
+                    <div class="switches-column">
+                        <div class="switch">
+                            <div class="switch-body">
+                                <div class="toggle"></div>
                             </div>
-                            <div class="switch">
-                                <div class="switch-body">
-                                    <div class="toggle"></div>
-                                </div>
-                                <label>Symbols</label>
-                                <input type="checkbox" name="symbols>">
-                            </div>
+                            <label>Numbers</label>
+                            <input type="checkbox" name="numbers>">
                         </div>
-                        <div class="switches-column">
-                            <div class="switch">
-                                <div class="switch-body">
-                                    <div class="toggle"></div>
-                                </div>
-                                <label>Lowercase</label>
-                                <input type="checkbox" name="lowercase>">
+                        <div class="switch">
+                            <div class="switch-body">
+                                <div class="toggle"></div>
                             </div>
-                            <div class="switch">
-                                <div class="switch-body">
-                                    <div class="toggle"></div>
-                                </div>
-                                <label>Uppercase</label>
-                                <input type="checkbox" name="numbers>">
-                            </div>
+                            <label>Symbols</label>
+                            <input type="checkbox" name="symbols>">
                         </div>
                     </div>
+                    <div class="switches-column">
+                        <div class="switch">
+                            <div class="switch-body">
+                                <div class="toggle"></div>
+                            </div>
+                            <label>Lowercase</label>
+                            <input type="checkbox" name="lowercase>">
+                        </div>
+                        <div class="switch">
+                            <div class="switch-body">
+                                <div class="toggle"></div>
+                            </div>
+                            <label>Uppercase</label>
+                            <input type="checkbox" name="numbers>">
+                        </div>
+                    </div>
+                </div>
 
-                    <button type="submit" class="submit-btn">Generate Password</button>
-                    <div class="remember">
-                        <p>Remember to write down the password you will use.</p>
-                    </div>
+                <button type="submit" class="submit-btn">Generate Password</button>
+                <div class="remember">
+                    <p>Remember to write down the password you will use.</p>
+                </div>
         </form>
     </div>
 </body>

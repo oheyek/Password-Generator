@@ -13,14 +13,14 @@ for (var i = 0; i < switches.length; i++) {
 }
 
 
-const passwordLengthSlider = document.getElementById('passwordLength');
-const sliderContainer = document.querySelector('.slider');
-
-const valueDisplay = document.createElement('div');
-valueDisplay.className = 'slider-value';
-valueDisplay.textContent = `Length: ${passwordLengthSlider.value} characters`;
-sliderContainer.appendChild(valueDisplay);
+const passwordLengthSlider = document.getElementById('charLenght');
+const sliderValue = document.querySelector('.slider-container .label-container span');
 
 passwordLengthSlider.addEventListener('input', function () {
-    valueDisplay.textContent = `Length: ${this.value} characters`;
+    sliderValue.textContent = this.value;
+    sliderValue.classList.add('pop');
+
+    setTimeout(() => {
+        sliderValue.classList.remove('pop');
+    }, 200);
 });
