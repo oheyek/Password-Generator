@@ -260,18 +260,160 @@ input[type="range"]::-moz-range-thumb {
     transition: all 0.5s ease;
 }
 
-footer{
+footer {
     text-align: center;
     margin-top: 10px;
     color: #fff;
     font-size: 12px;
 }
 
-a{
+a {
     color: #fff;
 }
 
-a:hover{
+a:hover {
     color: #f75164;
     transition: all 0.5s ease;
+}
+
+#generatedPassword.pop {
+    transform: scale(1.02);
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.strength-container {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.strength-container p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.strength-bars {
+    display: flex;
+    gap: 5px;
+    flex: 1;
+    margin-left: 10px;
+}
+
+.strength-bar {
+    height: 10px;
+    flex: 1;
+    background-color: #ddd;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.strength-weak .strength-bar:nth-child(1) {
+    background-color: #f75164;
+}
+
+.strength-medium .strength-bar:nth-child(1),
+.strength-medium .strength-bar:nth-child(2) {
+    background-color: #f7a951;
+}
+
+.strength-strong .strength-bar:nth-child(1),
+.strength-strong .strength-bar:nth-child(2),
+.strength-strong .strength-bar:nth-child(3) {
+    background-color: #51f751;
+}
+
+.strength-very-strong .strength-bar {
+    background-color: #00eeff;
+}
+
+.strength-text {
+    font-size: 14px;
+    font-weight: 600;
+    min-width: 100px;
+    text-align: right;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.strength-weak .strength-text {
+    color: #ff6b6b;
+}
+
+.strength-medium .strength-text {
+    color: #ffd93d;
+}
+
+.strength-strong .strength-text {
+    color: #6bff6b;
+}
+
+.strength-very-strong .strength-text {
+    color: #00eeff;
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        width: 95%;
+        padding: 15px;
+        margin: 10px;
+    }
+
+    .wrapper h1 {
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+
+    .switches-container {
+        flex-direction: column;
+    }
+
+    .switches-column {
+        width: 100%;
+    }
+
+    .password-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .copy-btn {
+        width: 100%;
+        margin-top: 5px;
+    }
+
+    .copy-btn button {
+        width: 100%;
+        justify-content: center;
+        padding: 12px;
+    }
+
+    .input-box input {
+        padding: 15px;
+        font-size: 14px;
+    }
+
+    .slider-container .label-container span {
+        font-size: 1.25rem;
+    }
+
+    .strength-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .strength-bars {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .strength-text {
+        align-self: flex-end;
+    }
+
+    .remember {
+        margin-top: 20px;
+        font-size: 12px;
+    }
 }

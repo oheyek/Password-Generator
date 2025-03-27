@@ -3,11 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Password Generator | ohey</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
 </head>
 
 <body>
@@ -20,17 +19,27 @@
                         <input type="text" id="generatedPassword" readonly placeholder="Generated Password">
                     </div>
                     <div class="copy-btn">
-                        <button>
+                        <button id="copy">
                             <i class="fa fa-copy"></i>
                         </button>
                     </div>
                 </div>
+                <div class="strength-container" id="password-strength-container">
+                    <p>Strength:</p>
+                    <div class="strength-bars">
+                        <div class="strength-bar"></div>
+                        <div class="strength-bar"></div>
+                        <div class="strength-bar"></div>
+                        <div class="strength-bar"></div>
+                    </div>
+                    <div class="strength-text" id="strength-text">-</div>
+                </div>
                 <div class="slider-container">
                     <div class="label-container">
-                        <label>Password Lenght</label>
+                        <label>Password Length</label>
                         <span>10</span>
                     </div>
-                    <input type="range" id="charLenght" min="1" max="30" value="10" class="slider-range" />
+                    <input type="range" id="charLength" min="1" max="30" value="10" class="slider-range" />
                 </div>
                 <div class="switches-container">
                     <div class="switches-column">
@@ -39,14 +48,14 @@
                                 <div class="toggle"></div>
                             </div>
                             <label>Numbers</label>
-                            <input type="checkbox" name="numbers>">
+                            <input type="checkbox" name="numbers" id="number" checked>
                         </div>
                         <div class="switch">
                             <div class="switch-body">
                                 <div class="toggle"></div>
                             </div>
                             <label>Symbols</label>
-                            <input type="checkbox" name="symbols>">
+                            <input type="checkbox" name="symbols" id="symbols" checked>
                         </div>
                     </div>
                     <div class="switches-column">
@@ -55,19 +64,19 @@
                                 <div class="toggle"></div>
                             </div>
                             <label>Lowercase</label>
-                            <input type="checkbox" name="lowercase>">
+                            <input type="checkbox" name="lowercase" id="lowercase" checked>
                         </div>
                         <div class="switch">
                             <div class="switch-body">
                                 <div class="toggle"></div>
                             </div>
                             <label>Uppercase</label>
-                            <input type="checkbox" name="numbers>">
+                            <input type="checkbox" name="uppercase" id="uppercase" checked>
                         </div>
                     </div>
                 </div>
 
-                <button type="submit" class="submit-btn">Generate Password</button>
+                <button id="generate" type="submit" class="submit-btn">Generate Password</button>
                 <div class="remember">
                     <p>Remember to write down the password you will use.</p>
                 </div>
@@ -79,5 +88,6 @@
     </div>
 </body>
 <script src="scripts/script.js"></script>
+</body>
 
 </html>
