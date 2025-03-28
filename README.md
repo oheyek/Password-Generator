@@ -15,7 +15,9 @@ A modern, secure password generator with a sleek UI that allows you to create st
 
 ## Demo
 
-You can try the Password Generator by cloning this repository and opening the `index.html` file in your browser.
+You can try the Password Generator online at: https://oheyek.github.io/Password-Generator/
+
+You can also try it locally by cloning this repository and opening the `index.html` file in your browser.
 
 ## Installation
 
