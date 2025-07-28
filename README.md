@@ -78,7 +78,7 @@ This project is open source and available under the MIT License.
 ## Author
 
 Made with ❤️ by ohey<br>
-<a href="https://www.buymeacoffee.com/ohey"><img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=&slug=ohey&button_colour=5F7FFF&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00" /></a>
+[![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/black_img.png)](https://www.buymeacoffee.com/ohey)
 
 ---
 
